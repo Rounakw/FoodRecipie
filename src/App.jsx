@@ -1,6 +1,6 @@
 import Layout from './Layout'
 import './App.css'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter,HashRouter } from 'react-router-dom'
 import { Route, RouterProvider, createRoutesFromElements } from 'react-router'
 import Home from './assets/Components/Main page/Home/Home'
 
@@ -13,7 +13,7 @@ function App() {
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route  path="/" element={<Layout/>}>
+    <Route  path="FoodRecipie/" element={<Layout/>}>
       <Route path='' element={<Home/>}></Route>
       <Route path="Recipie" element={<div>Recipie</div>}></Route>
       <Route path="Store" element={<div>Store page Unavailable</div>}></Route>
