@@ -17,9 +17,6 @@ body{
     overflow-x: hidden;
     position: relative;
 }
-#root{
-    /* position: relative; */
-    /* border: 2px solid red; */
-    /* height: 100%; */
-    /* background-color: red; */
+html{
+    overflow-x: hidden;
 }
