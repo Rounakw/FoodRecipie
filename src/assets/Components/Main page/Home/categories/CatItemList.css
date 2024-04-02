@@ -1,0 +1,23 @@
+.MaincatItemList{
+    /* background-color: blue; */
+    width: 80vw;
+    height: 15vw;
+    margin: 3vw auto;
+    
+
+}
+.CatItemList{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 80vw;
+    margin: auto; */
+}
+.MaincatItemList>span{
+    font-size: 3vw;
+    font-weight:500;
+    font-family: sans-serif;
+    margin-left: 1vw;
+    line-height: 5vw;
+}

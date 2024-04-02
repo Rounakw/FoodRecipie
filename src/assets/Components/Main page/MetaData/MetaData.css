@@ -1,0 +1,87 @@
+.wholePage{
+    background-color: #3C424E;
+}
+.wholePage>p{
+    color: white;
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+.ingredients li{
+    list-style-type: style;
+    font-size:1.5vw;
+}
+.ingredients{
+    background-color: white;
+    display: flex;
+    flex-direction: column;;
+    width: 40vw;
+    height: auto;
+    padding: 1.5vw;
+    margin-left: 2vw;
+    font-family: sans-serif;
+    border-radius: 0.6vw;
+    box-shadow: 1px 1px 10px 5px black;
+    
+}
+.ingredients h2,.process h2{
+    color: #1C67E0;
+    font-family:sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.process{
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 0.6vw;
+    box-shadow: 1px 1px 10px 5px black;
+}
+.process span{
+    color: #1C67E0;
+    font-family:sans-serif;
+    font-size: 1.3vw;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+@media screen and (max-width:1023px) {
+    #conts{
+        flex-direction: column;
+        /* background-color: red; */
+        width: 100%;
+        margin: auto;
+    }
+    #recipieid{
+        font-size: 2vw;
+    }
+    .ingredients{
+        margin: auto;
+        width: 60%;
+    }
+    .process{
+        margin: auto;
+        width: 60%;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    .ingredients h2,.process h2{
+        font-size: 4vw;
+    }
+    .ingredients li{
+        font-size: 4vw;
+    }
+    .process span{
+        font-size: 2vw;
+    }
+
+    
+}
+@media screen and (max-width:767px) {
+
+    #recipieid{
+        font-size: 4vw;
+    }
+}

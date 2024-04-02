@@ -1,0 +1,37 @@
+.ProductAllMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3vw;
+    justify-items: center;
+
+}
+@media screen and (max-width:767px) {
+    .ProductAllMain{
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 3vw;
+        justify-items: center;
+    
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .ProductAllMain{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #header{
+        font-size: 3vw;
+    }
+
+    
+}
+@media screen and (max-width:767px) {
+    .ProductAllMain{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        font-size: 3vw;
+        padding: 5vw 0;
+    }
+    
+}

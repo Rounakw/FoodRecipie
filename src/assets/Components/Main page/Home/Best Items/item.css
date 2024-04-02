@@ -1,0 +1,98 @@
+.items{
+    /* background-color: blue; */
+    /* padding: 0.1vw; */
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-items: center;
+    margin: 0.5vw 1vw;
+    cursor: pointer;
+    height: 11vw;
+}
+.items img{
+    /* background-color: rgb(0, 0, 0); */
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    
+}
+.items:hover img{
+    width: 11vw;
+    height: 11vw;
+    box-shadow: 0px 0px 6px 1px black;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.full span{
+    transition: all 0.2s linear;
+    font-size: 1.4vw;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.items:hover ~.full span{
+    color: rebeccapurple;
+}
+.items:hover h1{
+    color: rebeccapurple;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+.items{
+    height: 100%;
+    width: 100%;
+}
+
+    .items img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .items:hover img{
+        width: 13vw;
+        height: 13vw;
+        box-shadow: 0px 0px 6px 1px #1976D2;
+    }
+   
+}
+@media screen and (max-width:767px) {
+
+    .items{
+        height: 20vw;
+        width: 22vw;
+        /* background-color: rebeccapurple; */
+    }
+    
+        .items img{
+            width: 20vw;
+            height: 20vw;
+        }
+        .items:hover img{
+            width: 22vw;
+            height: 21vw;
+            box-shadow: 0px 0px 6px 1px #1976D2;
+        }
+
+        .full span{
+            font-size: 2vw;
+        }
+        #Biryani, #Fish,#Rolls{
+            height: 23vw;
+         }
+        .Biryani, .Fish,.Rolls{
+            margin-top: -1.5vw;
+         }
+        
+}
+
+

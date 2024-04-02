@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+/* .slider-container{
+    border: 1px solid red;
+    object-fit: cover;
+    position: relative;
+} */
+.slide{
+    /* overflow: hidden; */
+    height: 36vw;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+.hero-section-burger1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    top: 4vw;
+    left: 4vw;
+    letter-spacing: 0.2vw;
+}
+.hero-section-burger1 span{
+    color:#2378d8;
+    margin-left: 1vw;
+}
+.hero-section-burger2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    top: 8vw;
+    left: 4vw;
+}
+
+.span1{
+    font-size: 1vw;
+    letter-spacing: 0.3vw;
+}
+.span2{
+    color:#2378d8;
+}
+.explore-btn{
+    position: absolute;
+    bottom: 4vw;
+    left: 4vw;
+}
+.cheeseImg{
+    width: 8vw;
+    height: 8vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.3vw solid #2378d8;
+    margin: 0px 2vw;
+    padding: 0.2vw;
+    background-color: #35374B;
+}
+.hero-section-pizza1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    top: 4vw;
+    left: 4vw;
+    letter-spacing: 0.2vw;
+    
+}
+.hero-section-pizza1 span{
+    color:#2378d8;
+}
+.hero-section-pizza2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    top: 8vw;
+    left: 8vw;
+}
+.hero-section-pizza2 span{
+    color:#2378d8;
+}
+.hero-section-pasta1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    top: 4vw;
+    left: 4vw;
+    letter-spacing: 0.2vw;
+    
+}
+.hero-section-pasta1 span{
+    color:#2378d8;
+}
+.hero-section-pasta2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: "Cabin", sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    top: 8vw;
+    left: 8vw;
+}
+.hero-section-pasta2 span{
+    color:#2378d8;
+}
+
+@media screen  and (min-width:768px) and (max-width:1023px) {
+    
+    .slide{
+        /* overflow: hidden; */
+        height: 49vw;
+        position: relative;
+    }
+    .cheeseImg{
+        width: 15vw;
+        height: 15vw;
+    }
+    #cont{
+        top: 20vw;
+    }
+    #cont p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2vw;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+    }
+    #exbtn{
+        width: 20vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+    .slide h3{
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .slide h3:nth-child(3){
+        top: 10vw;
+    }
+}
+
+
+@media screen  and (max-width:767px) {
+    
+    .slide{
+        /* overflow: hidden; */
+        height: 49vw;
+        position: relative;
+    }
+    .slide .mainimg{
+    }
+    .cheeseImg{
+        border-width: 3px;
+        border-color: rgb(255, 255, 255);
+        width: 20vw;
+        height: 20vw;
+    }
+ 
+    #cont{
+        /* top: 20vw; */
+        justify-content: space-around;
+        width:100vw;
+        margin: auto;
+        left: 0px;
+        top: 22vw;
+    }
+    #cont p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3vw;
+        font-weight: 700;
+        /* letter-spacing: 1px; */
+
+    }
+    #exbtn{
+        position: absolute;
+        top: 6vw;
+        left: 65vw;
+        width: 30vw;
+        height: 8vw;
+        font-size: 3.2vw;
+        justify-content: space-evenly;
+        border: 1px solid white;
+    }
+
+    .slide h3{
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .slide h3:nth-child(3){
+        top: 10vw;
+    }
+}
+

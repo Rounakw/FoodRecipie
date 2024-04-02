@@ -1,0 +1,236 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111827;
+    height: 6vw;
+    border-bottom: 1.5px solid white;
+}
+
+.icon {
+    margin-left: 4vw;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2.1vw;
+    color: white;
+    text-decoration: underline white;
+}
+
+.icon img {
+    width: 3.3vw;
+}
+
+.iconpart2 {
+    color: #1976D2;
+}
+
+.pageList {
+    /* background-color: #1976D2; */
+    display: inline-flex;
+    gap: 1vw;
+    color: white;
+}
+
+.pageList p {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    cursor: pointer;
+    background-color: #0c0f16;
+    padding: 0.8vw 1.9vw;
+    border-radius: 0.5vw;
+    font-weight: 500;
+    /* width: vw; */
+}
+
+.searchSection {
+    margin-right: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.searchSection input {
+    height: 3vw;
+    width: 15vw;
+    padding-left: 1vw;
+    border-radius: 5px;
+    outline: none;
+    margin: 0.3vw;
+
+}
+
+.searchSection button {
+    color: white;
+    background-color: #3B82F6;
+    height: 3vw;
+    border-radius: 5px;
+    width: 6vw;
+    transition: all 0.2s;
+
+}
+
+.searchSection button:hover {
+    background-color: #1c67e0;
+}
+.menu{
+    display: none;
+}
+.hamburgerMenu{
+    display: none;
+}
+.animationout{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .searchSection input {
+        height: 3vw;
+        width: 15vw;
+        padding-left: 1vw;
+        border-radius: 5px;
+        outline: none;
+        margin: 0.3vw;
+
+        font-size: 1.2vw;
+    }
+
+    .searchSection button {
+        color: white;
+        background-color: #3B82F6;
+        height: 3vw;
+        border-radius: 5px;
+        width: 6vw;
+        transition: all 0.2s;
+        font-size: 1.2vw;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    .navbar {
+        height: 10vw;
+        position: relative;
+    }
+    .icon {
+        font-size: 2.5vw;
+    }
+
+    .icon img {
+        width: 3.6vw;
+    }
+
+    .pageList{
+        display: none;
+    }
+
+    .searchSection {
+        margin-right: 0vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .searchSection input {
+        height: 5vw;
+        width: 25vw;
+
+    }
+
+    .searchSection button {
+        font-size: 2vw;
+        font-family: sans-serif;
+        height: 5vw;
+        width: 12vw;
+    }
+    .menu{
+        display: flex;
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+    .hamburgerMenu{
+        display: block;
+        background-color: #111827;
+        position: absolute;
+        width: 25vw;
+        top: 10vw;
+        right: 0px;
+        z-index: 99;
+        animation: animationin 0.2s linear 0s forwards;
+    }
+    .hamburgerMenu p{
+        padding: 1vw;
+        font-size: 2vw;
+        color: white;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+ 
+
+    @keyframes animationin {
+        0%{
+            right: -25vw;
+        }
+        100%{
+            right: 0px
+        }
+    }
+  
+
+}
+
+@media screen and (max-width:767px){
+    .navbar{
+        height: 20vw;
+        justify-content: space-evenly;
+        gap: 39vw;
+    }
+    .pageList{
+        display: none;
+    }
+    .icon img{
+        width: 8vw;
+
+    }
+    .icon span{
+font-size: 5vw;
+    }
+    .searchSection{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .hamburgerMenu{
+        display: block;
+        background-color: #111827;
+        position: absolute;
+        width: 35vw;
+        top: 20vw;
+        right: 0px;
+        z-index: 99;
+        animation: animationin 0.2s linear 0s forwards;
+    }
+    .hamburgerMenu p{
+        font-weight: 600;
+        padding: 2vw;
+        font-size: 4vw;
+        color: white;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    @keyframes animationin {
+        0%{
+            right: -35vw;
+        }
+        100%{
+            right: 0px
+        }
+    }
+   
+
+}

@@ -1,0 +1,35 @@
+#footerMain{
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* background-color: red; */
+    /* padding: vw; */
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #icolist{
+        width: auto;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width:767px) {
+    #downdiv{
+        flex-direction: column;
+        gap: 3vw;
+        font-size: 3vw;
+    }
+    #icolist{
+        width: auto;
+        /* flex-direction: column; */
+        /* background-color: red; */
+    }
+    #downdiv p:nth-child(1){
+        margin-top: 5vw;
+       margin-left: 2vw;
+    }
+    #downdiv p:nth-child(2){
+       margin-left: 1.9vw;
+    }
+
+}

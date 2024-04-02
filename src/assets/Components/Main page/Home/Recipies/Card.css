@@ -1,0 +1,61 @@
+.card{
+    transition: all 0.2s linear;
+    position: relative;
+    bottom: 0px;
+}
+.card:hover{
+    /* border: 2px solid red; */
+    box-shadow: 0px 2px 12px -1px black;
+    bottom: 5px;
+}
+
+@media screen and (min-width:1024px) {
+    #tagCont{
+        gap: 1vw;
+        width: 21vw;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #title{
+        font-size: 2.2vw;
+        font-weight: bolder;
+        text-align: center;
+    }
+#tagCont{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+}
+    #min{
+        font-size: 2vw;
+    }
+    #chicken{
+        font-size: 2vw;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    #card{
+        width: 50vw;
+        
+    }
+    #tagCont{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        width: 100%;
+    }
+        #min{
+            font-size: 2.4vw;
+        }
+        #chicken{
+            font-size: 2.4vw;
+            margin-right: 8vw;
+        }
+
+}
